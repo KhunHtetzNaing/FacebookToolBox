@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group>
+        <item android:id="@+id/home"
+            android:icon="@drawable/home"
+            android:title="Home" />
+
+        <item android:id="@+id/security"
+            android:icon="@drawable/security"
+            android:title="Security" />
+
+        <item android:id="@+id/privacy"
+            android:icon="@drawable/privacy"
+            android:title="Privacy" />
+
+        <item android:id="@+id/other"
+            android:icon="@drawable/other"
+            android:title="Other" />
+    </group>
+
+    <item android:title="App Settings">
+        <menu>
+            <item android:id="@+id/password"
+                android:icon="@drawable/key"
+                android:title="Password" />
+
+            <item android:id="@+id/about"
+                android:icon="@drawable/about"
+                android:title="About App" />
+
+            <item android:id="@+id/update"
+                android:icon="@drawable/update"
+                android:title="Check Update" />
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item android:id="@+id/share"
+                android:icon="@drawable/share"
+                android:title="Share" />
+
+            <item android:id="@+id/feedback"
+                android:icon="@drawable/feedback"
+                android:title="Feedback" />
+
+            <item android:id="@+id/rate"
+                android:icon="@drawable/rate"
+                android:title="Rate This App" />
+
+            <item android:id="@+id/more"
+                android:icon="@drawable/more"
+                android:title="More Apps" />
+        </menu>
+    </item>
+</menu>

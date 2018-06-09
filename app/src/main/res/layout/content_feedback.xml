@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:ads="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_marginTop="5dp"
+    android:layout_marginLeft="10dp"
+    android:layout_marginRight="10dp"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    app:layout_behavior="@string/appbar_scrolling_view_behavior"
+    tools:context="com.ngoe.ftk.Feedback"
+    tools:showIn="@layout/activity_feedback">
+
+    <EditText
+        android:gravity="start"
+        android:id="@+id/edName"
+        android:hint="Name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        android:gravity="start"
+        android:id="@+id/edSubject"
+        android:layout_below="@id/edName"
+        android:hint="Subject"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <com.google.android.gms.ads.AdView
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-1325188641119577/1054494128">
+    </com.google.android.gms.ads.AdView>
+
+    <EditText
+        android:id="@+id/edMessage"
+        android:gravity="start"
+        android:layout_above="@id/adView"
+        android:hint="Message"
+        android:layout_below="@id/edSubject"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+</RelativeLayout>
